@@ -12,6 +12,11 @@
 		7B9333551D620B5F00F18309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9333531D620B5F00F18309 /* Main.storyboard */; };
 		7B9333571D620B5F00F18309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9333561D620B5F00F18309 /* Assets.xcassets */; };
 		7B93335A1D620B5F00F18309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9333581D620B5F00F18309 /* LaunchScreen.storyboard */; };
+		7B9333621D620B9900F18309 /* ExpansionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9333611D620B9900F18309 /* ExpansionViewController.swift */; };
+		7BB131431D630464003494C9 /* 20160509-00010001-seraijp-000-view.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BB131421D630464003494C9 /* 20160509-00010001-seraijp-000-view.jpg */; };
+		7BB131451D630473003494C9 /* ダウンロード.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7BB131441D630473003494C9 /* ダウンロード.jpeg */; };
+		7BB131471D630477003494C9 /* o040003851435672936053.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BB131461D630477003494C9 /* o040003851435672936053.jpg */; };
+		7BB131491D63047A003494C9 /* nodoguro2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BB131481D63047A003494C9 /* nodoguro2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		7B9333561D620B5F00F18309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B9333591D620B5F00F18309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B93335B1D620B5F00F18309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9333611D620B9900F18309 /* ExpansionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpansionViewController.swift; sourceTree = "<group>"; };
+		7BB131421D630464003494C9 /* 20160509-00010001-seraijp-000-view.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "20160509-00010001-seraijp-000-view.jpg"; sourceTree = "<group>"; };
+		7BB131441D630473003494C9 /* ダウンロード.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ダウンロード.jpeg"; sourceTree = "<group>"; };
+		7BB131461D630477003494C9 /* o040003851435672936053.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = o040003851435672936053.jpg; sourceTree = "<group>"; };
+		7BB131481D63047A003494C9 /* nodoguro2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nodoguro2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +67,14 @@
 				7B93334F1D620B5F00F18309 /* AppDelegate.swift */,
 				7B9333511D620B5F00F18309 /* ViewController.swift */,
 				7B9333531D620B5F00F18309 /* Main.storyboard */,
+				7B9333611D620B9900F18309 /* ExpansionViewController.swift */,
 				7B9333561D620B5F00F18309 /* Assets.xcassets */,
 				7B9333581D620B5F00F18309 /* LaunchScreen.storyboard */,
 				7B93335B1D620B5F00F18309 /* Info.plist */,
+				7BB131421D630464003494C9 /* 20160509-00010001-seraijp-000-view.jpg */,
+				7BB131441D630473003494C9 /* ダウンロード.jpeg */,
+				7BB131461D630477003494C9 /* o040003851435672936053.jpg */,
+				7BB131481D63047A003494C9 /* nodoguro2.jpg */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -125,7 +140,11 @@
 			files = (
 				7B93335A1D620B5F00F18309 /* LaunchScreen.storyboard in Resources */,
 				7B9333571D620B5F00F18309 /* Assets.xcassets in Resources */,
+				7BB131491D63047A003494C9 /* nodoguro2.jpg in Resources */,
+				7BB131471D630477003494C9 /* o040003851435672936053.jpg in Resources */,
 				7B9333551D620B5F00F18309 /* Main.storyboard in Resources */,
+				7BB131451D630473003494C9 /* ダウンロード.jpeg in Resources */,
+				7BB131431D630464003494C9 /* 20160509-00010001-seraijp-000-view.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +157,7 @@
 			files = (
 				7B9333521D620B5F00F18309 /* ViewController.swift in Sources */,
 				7B9333501D620B5F00F18309 /* AppDelegate.swift in Sources */,
+				7B9333621D620B9900F18309 /* ExpansionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +307,7 @@
 				7B9333601D620B5F00F18309 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
