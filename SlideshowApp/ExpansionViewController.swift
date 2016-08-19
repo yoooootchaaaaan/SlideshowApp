@@ -12,12 +12,12 @@ class ExpansionViewController: UIViewController {
     @IBOutlet weak var expantionImageView: UIImageView!
     
     var expansionIndex:Int = 0
-    let photos = ["20160509-00010001-seraijp-000-view.jpg", "ダウンロード.jpeg", "o040003851435672936053.jpg", "nodoguro2.jpg"]
+    var expandedPhoto:UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let image:UIImage! = UIImage(named: photos[expansionIndex])
+        let image:UIImage! = expandedPhoto
         expantionImageView.image = image
     }
     

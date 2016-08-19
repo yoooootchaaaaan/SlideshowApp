@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var index:Int = 0
     var timer:NSTimer?
     var count:Int = 0 //0は一時停止中、1は再生中
+    var expand:Int = 0 //0は縮小、1は拡大
     
     let photos = ["20160509-00010001-seraijp-000-view.jpg", "ダウンロード.jpeg", "o040003851435672936053.jpg", "nodoguro2.jpg"]
 
@@ -37,6 +38,12 @@ class ViewController: UIViewController {
         // 遷移先のExpansionViewControllerで宣言している変数に値を代入して渡す
         
         expansionViewController.expansionIndex = index
+        expansionViewController.expandedPhoto = UIImage(named: photos[index])
+        if(count == 0) { //一時停止中ならば
+            //何も起こらない
+        } else if(count == 1) { //再生中ならば
+            timer!.invalidate()
+        }
     }
     
     func updateImage() { //画像の更新
@@ -44,8 +51,12 @@ class ViewController: UIViewController {
         imageView.image = image
     }
     
-    @IBAction func imageTapped(sender: UITapGestureRecognizer) { //画像をタップした時に呼び出されるメソッド
-        
+    @IBAction func imageTapped(sender: UITapGestureRecognizer) {
+        if(count == 0) { //一時停止中ならば
+            //何も起こらない
+        } else if(count == 1) { //再生中ならば
+            timer!.invalidate()
+        }
     }
 
     @IBAction func back(sender: AnyObject) { //戻るボタンを押した時に呼び出されるメソッド
@@ -95,7 +106,12 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func unwind(segue: UIStoryboardSegue) { //遷移先から戻ってくるときに呼ばれるメソッド
+    @IBAction func unwind(segue: UIStoryboardSegue) { //遷移先（拡大画像）から戻ってくるときに呼ばれるメソッド
+        if(count == 0) { //一時停止中ならば
+            //何も起こらない
+        } else if(count == 1) { //拡大する前に再生中だったならば
+            timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(self.timerNext(_:)), userInfo: nil, repeats: true) //再びタイマーを動かす
+        }
     }
     
 }
